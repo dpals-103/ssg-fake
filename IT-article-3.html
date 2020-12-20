@@ -75,42 +75,65 @@
 
 	<section class="con-min-width">
 		<div class="con">
-			<div class="section-3_detail flex"><div class="detail_1 flex"><span>MySQL 기본명령어 모음집_1탄</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-21 03:25:50</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🚩내가 보려고 만드는 MySQL 기본명령어 모음집 -- 1탄
-# 👀 데이터 조회하기!
+			<div class="section-3_detail flex"><div class="detail_1 flex"><span>MySQL 기본명령어 모음집_2탄</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-21 00:16:22</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 2탄
+# 🎁 데이터 생성하기!
 설명순서는 큰 단위에서 작은 단위 순으로!
 ***
 <br>
 <br>
-## 🔎 데이터베이스 조회 (a.k.a 데이터가 모여있는 폴더)
-## `SHOW DATABASES;`
-##### 👉 생성되어 있는 데이터베이스의 목록을 조회합니다. 
+## 🔎 데이터베이스 생성하기 (a.k.a 데이터를 모을 폴더를 만들자)
+## `CREATE DATABASES 데이터베이스명;`
+##### 👉 데이터베이스를 생성합니다.  
 
 <br>
 
-## 🔎 테이블 조회 (a.k.a 하나의 엑셀파일)
-## `SHOW TABLES`;
-##### 👉 선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다. 
+## 🔎 테이블 구조 및 칼럼 생성 (a.k.a 하나의 엑셀파일과 그 안의 항목을 만들자)
+## `CRATE TABLES(COLUMN 내용);`;
+##### 👉 괄호 안에 만들어낼 COLUMN 내용과 속성을 지정합니다.  
 <br>
 ```
-✅ USE a1;
----- 'a1' 이라는 데이터베이스를 선택합니다. 
-```
-<br>
-## `DESC '테이블명';`
-##### 👉 선택한 테이블의 칼럼구조와 속성을 조회합니다.
-<br>
-<br>
-<br>
-## 🔎 ROW(로우) 조회를 위한 명령어 (a.k.a 엑셀파일의 한 행, 실질적인 데이터가 들어있는 곳)
+✅ CREATE TABLES article (
+    id INT(10),
+    title char(30)
+);
 
+----- article 이라는 테이블을 만들고 그 안에 숫자형 데이터 id와 문자 데이터를 갖는 title 칼럼을 생성합니다. 
+```
+<br>
 
-## `SELECT id;`
-##### 👉 id 칼럼의 row의 값을 선택하여 조회합니다.
+## `주로 쓰는 COLUMN 속성들`
+```
+✅ INT(10) : 숫자형 데이터. 괄호 안의 숫자는 입력되는 값의 자릿수를 의미합니다. 
+
+✅ AUTO_INCREMENT : 숫자가 자동으로 증가합니다.
+
+✅ PRIMATY KEY() : '기본 키'. 데이터를 구분하기 위해 괄호안의 항목에 제약을 겁니다. 
+
+✅ DATETIME : '시간' 을 나타냅니다. 
+
+✅ VARCHAR(100) : 문자 데이터 속성입니다. 괄호의 숫자는 영문기준으로 100개의 문자가 저장될 수 있으며, 한글 기준으로 대략 30자 정도 입력될 수 있음을 나타냅니다.(한글은 1글자 당 약 3바이트). ~256까지 사용가능 하며, 데이터의 길이를 예측하기 힘들거나 변경할 가능성이 낮을 때 사용합니다. 
+
+✅ CHAR(): 마찬가지로 문자 데이터 이며, 데이터의 길이가 고정되어 있기 때문에 메모리 차지가 덜 합니다.
+
+✅ TEXT : 문자를 아주 많이 입력해야 할 때 사용 합니다. (EX. 게시글의 본문 등)
+
+✅ NOT NULL : ROW값에 NULL을 받을 수 없습니다. 
+```
+<BR>
+<BR>
+## 🔎 ROW(로우) 값을 생성하기 (a.k.a 항목에 맞는 값을 넣어주자)
+## `INSERT INTO 테이블명 SET 칼럼명 = 값 `
+##### 👉 값을 입력할 때는 모든 항목의 값을 빠짐없이 입력해야 합니다
 <br>
 ```
-✅ SELECT id FROM article;
+✅ INSERT INTO article
+SET id = 10, 
+title = '안녕',  ----------------- 텍스트 작성 시 작은 따옴표 사용
+regDate = NOW()   -------------------- 현재 시간을 나타냅니다
+`body` = '헬로';  --------------- sql에 내장되어 있는 단어의 경우 백틱(`)으로 구분합니다.
+                                 마지막 항목 작성 후 ; 로 작성 마무리를 합니다. 
 ```
-</div></div><div class="detail_4 flex"><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="IT-article-3.html">다음글 &gt;</a></div></div></div></div></section><script>
+</div></div><div class="detail_4 flex"><div class="prev"><a href="IT-article-2.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div></div></div></div></section><script>
 	function detail_body__init() {
 
 		if (toastui === undefined) {
