@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJBTE5EBQ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VJBTE5EBQ2');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 구글 소유권 확인 메타태그 -->
+<meta name="google-site-verification" content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
+<link rel="stylesheet" href="app.css" />
+<title>jeya_portfolio</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<!-----------헤더 시작---------------------------------->
+
+		<header class="top con-min-width">
+			<div class="con">
+				<div class="top__banner flex">
+					<a href="index.html" class="flex"> <img
+						src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXnwmU%2FbtqPNyskUIk%2FoEglomcERfDjifCAOVj900%2Fimg.png"
+						alt=""> <span>Welcome!</span>
+					</a>
+
+				</div>
+
+				<div class="top__menuBar flex">
+					<div class="icon">
+						<img
+							src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdGbRo9%2FbtqP0sMtymz%2FdaU5uKrftzz9jTxknr92a1%2Fimg.png"
+							alt="">
+					</div>
+
+					<ul class="row flex">
+						<li class="cell"><a href="index.html">Home</a></li>
+						<li class="cell"><a href="#">About</a></li>
+						<li class="cell"><a href="#">Board</a>
+							<ul><li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li>
+							</ul></li>
+						<li class="cell"><a href="#">Social</a></li>
+						<li class="cell"><a href="#">Data</a></li>
+					</ul>
+				</div>
+				<div class="top__leftMenuBar"></div>
+			</div>
+		</header>
+		<!-----------헤더 끝---------------------------------->
+	<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+	<!-- 토스트 UI 에디터, CSS 코어 -->
+	<link rel="stylesheet"
+		href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+	<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+	<script
+		src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+	<section class="con-min-width">
+		<div class="con">
+			<div class="section-3_detail flex"><div class="detail_1 flex"><span>MySQL 기본명령어 모음집_1탄</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-20 03:25:50</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 1탄
+# 👀 데이터 조회하기!
+설명순서는 큰 단위에서 작은 단위 순으로!
+***
+<br>
+<br>
+## 🔎 데이터베이스 조회 (a.k.a 데이터가 모여있는 폴더)
+## `SHOW DATABASES;`
+##### 👉 생성되어 있는 데이터베이스의 목록을 조회합니다. 
+
+<br>
+
+## 🔎 테이블 조회 (a.k.a 하나의 엑셀파일)
+## `SHOW TABLES`;
+##### 👉 선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다. 
+<br>
+```
+✅ USE a1;
+----> 'a1' 이라는 데이터베이스를 선택합니다. 
+```
+<br>
+
+## `DESC '테이블명';`
+##### 👉 선택한 테이블의 칼럼구조와 속성을 조회합니다.
+<br>
+<br>
+<br>
+## 🔎 ROW(로우) 조회를 위한 명령어 (a.k.a 엑셀파일의 한 행, 실질적인 데이터가 들어있는 곳)
+
+
+## `SELECT id;`
+#### 👉 id 칼럼의 row의 값을 선택하여 조회합니다.
+```
+✅ SELECT id FROM article;
+----> aritlce 테이블에서 id칼럼의 값을 조회합니다. 
+```
+<br>
+## `FROM article(테이블명);`
+##### 👉 row를 조회할 테이블을 지정합니다.
+```
+✅ SELECT * FROM forest;
+----> forest 테이블에 있는 모든 정보를 조회합니다.
+```
+<br>
+## `where id=2;`
+##### 👉 id칼럼의 값이 2인 row를 조회합니다.
+```
+✅ SELECT * FROM article where id = 2;
+----> aritlce 테이블에서 id칼럼의 값이 2인 로우를 모두 조회합니다. 
+```
+<br>
+## `AND title = 'banana'`
+##### 👉'where' 명령어를 사용할 때 추가적인 조건은 AND 와 함께 사용합니다.
+```
+✅ SELECT * FROM article where id = 2 AND title = 'banana';
+----> aritlce 테이블에서 id가 2이고, title이 banana인 row를 조회합니다. 
+```
+
+## `ORDER BY id DESC'`
+##### 👉 'id값을 통해 역순으로 정렬한다'
+```
+✅ ORDER BY (기준칼럼)  : 기준 칼럼을 통해 정렬
+✅ DESC  : 역순 (내림차순)
+✅ DESC  : 순차 (오름차순) 
+목록으로돌아가기
+```
+</div></div><div class="detail_4 flex"><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div></div></div></div></section><script>
+	function detail_body__init() {
+
+		if (toastui === undefined) {
+			return;
+		}
+
+		var body = document.querySelector('.detail_body');
+		var initialValue = body.innerHTML.trim();
+		
+		const viewer = new toastui.Editor.factory({
+			el : body,
+			initialValue : initialValue,
+			viewer : true
+		});
+	}
+	detail_body__init();
+	
+</script><div id="disqus_thread"></div>
+<script>
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>
+	Please enable JavaScript to view the <a
+		href="https://disqus.com/?ref_noscript">comments powered by
+		Disqus. </a>
+</noscript><!-----------푸터 시작---------------------------------->
+<footer class="bottom con-min-width main">
+	<div class="con">
+		<div class="bottom-bar flex">
+			<div>
+				<span>Je-ya_portfolio</span>
+			</div>
+			<div class="img-box">
+				<img
+					src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc6ZH8K%2FbtqPYSY8vkt%2FgwbLp6dqod6dKimgQZrHA0%2Fimg.png"
+					alt="">
+			</div>
+			<div>
+				<span>Thank you for coming my Blog :)</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-----------푸터 끝---------------------------------->
+</div>
+
+</body>
+</html>
