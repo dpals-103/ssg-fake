@@ -88,33 +88,75 @@
 
         </div>
       </header>
-      <!-----------헤더 끝----------------------------------> <section class = "con-min-width">
-        <div class="con">
-          <div class="section-6__social main">
-            <ul class = "social_link flex">
-              
-              <li class="cell">
-                <div class="img-box">
-                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbY4SJJ%2FbtqQXAqsxng%2FOT873GrkpvG0NorcwNh7U1%2Fimg.jpg" alt=""></div>
-                <div class="link"><a href="https://github.com/dpals-103" target="_blank">Github</a></div>
-              </li>
-              <li class="cell">
-                <div class="img-box">
-                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2rmvH%2FbtqQXA41Cb3%2F6eutRRq6nIKr60KCkkKYWK%2Fimg.jpg" alt=""></div>
-                <div class="link"><a href="https://jeyapage.tistory.com/" target="_blank">tistoty</a></div>
-              </li>
-            </ul>
-            <div class="contact-text">
-              <span>If you want contact me 💌</span>
-              <div class="email">dpals103@gmail.com</div>
-              </div>
-             <!-- <div>🌼</div>
-                <div class="">
-                  준비중입니다 :-) 
-                </div> -->
-            </div>
-          </div>
-          </section><!-----------푸터 시작---------------------------------->
+      <!-----------헤더 끝----------------------------------><!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+	
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+<section class="con-min-width">
+	<div class="con">
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>CSS display속성을 알아보자!</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-23 11:31:26</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🌈 CSS display에 대해 알아보자!
+<br>
+## 주로 3가지 기능을 많이 사용해요! 
+## 👉`inline-block;`
+
+## 👉`block;`
+
+## 👉`flex;`
+> flex는 내용이 아주 많은 관계로 다음편에서 정리해볼께요! : )
+<br>
+<br>
+## ✅ inline-block
+
+##### 😃엘리먼트들이 기본적으로 줄바꿈 없이 한줄에 나란히 배치되요!
+<br>
+👉 감싸고 있는 콘텐츠 크기에 맞춰 최소한으로 유연하게 줄어드는 특징을 가져요!
+( 글자 크기에 딱 맞춰 배경색을 지정해야 할 때 주로 사용해요!) 
+<br>
+👉 감싸고 있는 콘텐츠가 없다면 크기가 아예 사라집니다!
+<br>
+👉 inline의 속성을 가지고 있기 때문에 가능한 범위라면 한줄을 여럿이 함께 사용합니다!
+<br>
+👉 글자요소들은 기본적으로 inline 속성을 가지고 있는데, 이건 magin이나 padding을 사용할 수 없어요 ㅠ 하지만 inline-block은 가능합니다! 
+
+## ✅ block
+
+##### 😃엘리먼트들이 마치 블럭처럼 쌓이는 모습이에요!
+<br>
+👉 block으로 지정된 엘리먼트들은 줄바꿈이 들어가 한 줄을 혼자 차지하는 모습을 보여요! 
+<br>
+👉 최대한 유연하게 늘어나는 속성을 가지고 있어요! 
+ex. a태그는 기본적으로 inline 속성이라 범위가 넓지 않아요. 이럴 때
+클릭범위를 넓히기 위해서 block 속성을 지정해줍니다! </div></div><div class="detail_4 flex"><div class="prev"><a href="IT-article-4.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+<script>
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>
+	Please enable JavaScript to view the <a
+		href="https://disqus.com/?ref_noscript">comments powered by
+		Disqus. </a>
+</noscript><!-----------푸터 시작---------------------------------->
 <footer class="bottom con-min-width main">
 	<div class="con">
 		<div class="bottom-bar flex">
