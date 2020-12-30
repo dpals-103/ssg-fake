@@ -19,6 +19,7 @@
 <link rel=" shortcut icon" href="favicon.ico">
 <link rel="icon" href="favicon.ico">
 
+<!-- 
 <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -36,9 +37,46 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+ -->
 
 <meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-title" content="JEYA-BLOG" />
+<!-- 메타태그정보 //-->
+<!-- META -->
+<link rel="canonical" href="https://blog.ljeya.org" />
+<meta name="subject" content="코린이 제야의 개발블로그"/>
+<meta name="title" content="JEYA-BLOG" />
+<meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
+<meta name="copyright" content="JEYA-BLOG" />
+<meta name="pubdate" content="2020-12-31T01:22:42" />
+<meta name="lastmod" content="2020-12-31T01:22:42" />
+<!-- OPENGRAPH -->
+<meta property="og:site_name" content="JEYA-BLOG" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="코린이 제야의 개발블로그" />
+<meta property="og:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image" content="site/logo.png" />
+<meta property="og:image:alt" content="blog.ljeya.org" />
+<meta property="og:image:width" content="486" />
+<meta property="og:image:height" content="254" />
+<meta property="og:updated_time" content="2020-12-31T01:22:42"/>
+<meta property="og:pubdate" content="2020-12-31T01:22:42" />
+<meta property="og:url" content="https://blog.ljeya.org" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="코린이 제야의 개발블로그" />
+<meta name="twitter:site" content="@JEYA-BLOG" />
+<meta name="twitter:creator" content="@JEYA-BLOG" />
+<meta name="twitter:image" content="site/logo.png">
+<meta name="twitter:description" content="초보 개발자의 개발공부 블로그입니다." />
+<!-- GOOGLE+ -->
+<meta itemprop="headline" content="JEYA-BLOG" />
+<meta itemprop="name" content="JEYA-BLOG" />
+<meta itemprop="description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta itemprop="image" content="site/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
 <meta name="google-site-verification" content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
@@ -46,7 +84,7 @@
 <!--css -->
 <link rel="stylesheet" href="app.css" />
 
-<title>jeya_portfolio</title>
+<title>MySQL 기본명령어 모음집_2탄</title>
 </head>
 <body>
 
@@ -72,7 +110,7 @@
               <ul>
                 <li class="cell "><a class ="point" href="#">Board</a>
                   <ul>
-                   <li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li>
+                   <li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
                   </ul>
                 </li>
               </ul>
@@ -95,7 +133,6 @@
 <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 	
@@ -109,6 +146,7 @@
 <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
 <script
 	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+	
 <section class="con-min-width">
 	<div class="con">
 		<div class="section-3_detail flex"><div class="detail_1 flex"><span>MySQL 기본명령어 모음집_2탄</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-21 00:16:22</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 2탄
@@ -168,7 +206,8 @@ title = '안녕' : 텍스트 작성 시 작은 따옴표 사용
 regDate = NOW() : 현재 시간을 나타냅니다
 `body` = '헬로'; : sql에 내장되어 있는 단어의 경우 백틱(`)으로 구분합니다.
 마지막 항목 작성 후 ; 로 작성 마무리를 합니다. 
-```</div></div><div class="detail_4 flex"><div class="prev"><a href="IT-article-2.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="IT-article-4.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+```
+</div></div><div class="detail_4 flex"><div class="prev"><a href="IT-article-2.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="IT-article-4.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
 <script>
 	(function() {
 		var d = document, s = d.createElement('script');
