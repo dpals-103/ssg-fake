@@ -46,37 +46,271 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.ljeya.org" />
-<meta name="subject" content="코린이 제야의 개발블로그"/>
+<meta name="subject" content="CSS 선택자를 알아보자!"/>
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
-<meta name="pubdate" content="2020-12-31T01:22:42" />
-<meta name="lastmod" content="2020-12-31T01:22:42" />
+<meta name="pubdate" content="2021-01-03T06:42:10" />
+<meta name="lastmod" content="2021-01-03T06:42:10" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="코린이 제야의 개발블로그" />
-<meta property="og:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta property="og:title" content="CSS 선택자를 알아보자!" />
+<meta property="og:description" content="  CSS 기본선택자
+br
+ 크게 3가지 선택자로 구분지을 수 있어요
+
+ 자식선택자
+
+ 형제선택자
+
+ 후손손자선택자
+br
+  자식 선택자   
+
+ 부모 바로 밑의 직계자식을 선택합니다
+br
+
+section
+ div
+ cell
+ cell
+ div
+ div
+ cell
+ cell
+ div
+section
+
+ section  div 
+ div 2개가 선택됩니다 
+br
+br
+  인접형제 선택자   
+
+ 인접해있는붙어있는 형제 선택자를 선택합니다 
+br
+
+section
+ div1
+ cell
+ cell
+ div1
+ div2
+ cell
+ cell
+ div2
+ div3
+ cell
+ cell
+ div3
+section
+
+  section  div1  div2 
+  div1과 인접해있는 div2를 선택할 수 있습니다
+  인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다 
+br
+br
+  후손손자선택자   
+
+ 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
+br
+
+section
+ div1 class child
+ cell
+ cell
+ div1
+ div2 class child
+ cell
+ cell
+ div2
+ div3 class child
+ cell
+ cell
+ div3
+section
+
+  section  cell 
+ section 에 속한 모든 cell 를 선택합니다 
+  section  child 
+ section 에 속한 클래스명이 child인 엘리먼트를 모두 선택합니다 " />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image" content="site/logo.png" />
+<meta property="og:image" content="site/img/logo.png" />
 <meta property="og:image:alt" content="blog.ljeya.org" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2020-12-31T01:22:42"/>
-<meta property="og:pubdate" content="2020-12-31T01:22:42" />
+<meta property="og:updated_time" content="2021-01-03T06:42:10"/>
+<meta property="og:pubdate" content="2021-01-03T06:42:10" />
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="코린이 제야의 개발블로그" />
+<meta name="twitter:title" content="CSS 선택자를 알아보자!" />
 <meta name="twitter:site" content="@JEYA-BLOG" />
 <meta name="twitter:creator" content="@JEYA-BLOG" />
-<meta name="twitter:image" content="site/logo.png">
-<meta name="twitter:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta name="twitter:image" content="site/img/logo.png">
+<meta name="twitter:description" content="  CSS 기본선택자
+br
+ 크게 3가지 선택자로 구분지을 수 있어요
+
+ 자식선택자
+
+ 형제선택자
+
+ 후손손자선택자
+br
+  자식 선택자   
+
+ 부모 바로 밑의 직계자식을 선택합니다
+br
+
+section
+ div
+ cell
+ cell
+ div
+ div
+ cell
+ cell
+ div
+section
+
+ section  div 
+ div 2개가 선택됩니다 
+br
+br
+  인접형제 선택자   
+
+ 인접해있는붙어있는 형제 선택자를 선택합니다 
+br
+
+section
+ div1
+ cell
+ cell
+ div1
+ div2
+ cell
+ cell
+ div2
+ div3
+ cell
+ cell
+ div3
+section
+
+  section  div1  div2 
+  div1과 인접해있는 div2를 선택할 수 있습니다
+  인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다 
+br
+br
+  후손손자선택자   
+
+ 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
+br
+
+section
+ div1 class child
+ cell
+ cell
+ div1
+ div2 class child
+ cell
+ cell
+ div2
+ div3 class child
+ cell
+ cell
+ div3
+section
+
+  section  cell 
+ section 에 속한 모든 cell 를 선택합니다 
+  section  child 
+ section 에 속한 클래스명이 child인 엘리먼트를 모두 선택합니다 " />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="JEYA-BLOG" />
 <meta itemprop="name" content="JEYA-BLOG" />
-<meta itemprop="description" content="초보 개발자의 개발공부 블로그입니다." />
-<meta itemprop="image" content="site/logo.png" />
+<meta itemprop="description" content="  CSS 기본선택자
+br
+ 크게 3가지 선택자로 구분지을 수 있어요
+
+ 자식선택자
+
+ 형제선택자
+
+ 후손손자선택자
+br
+  자식 선택자   
+
+ 부모 바로 밑의 직계자식을 선택합니다
+br
+
+section
+ div
+ cell
+ cell
+ div
+ div
+ cell
+ cell
+ div
+section
+
+ section  div 
+ div 2개가 선택됩니다 
+br
+br
+  인접형제 선택자   
+
+ 인접해있는붙어있는 형제 선택자를 선택합니다 
+br
+
+section
+ div1
+ cell
+ cell
+ div1
+ div2
+ cell
+ cell
+ div2
+ div3
+ cell
+ cell
+ div3
+section
+
+  section  div1  div2 
+  div1과 인접해있는 div2를 선택할 수 있습니다
+  인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다 
+br
+br
+  후손손자선택자   
+
+ 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
+br
+
+section
+ div1 class child
+ cell
+ cell
+ div1
+ div2 class child
+ cell
+ cell
+ div2
+ div3 class child
+ cell
+ cell
+ div3
+section
+
+  section  cell 
+ section 에 속한 모든 cell 를 선택합니다 
+  section  child 
+ section 에 속한 클래스명이 child인 엘리먼트를 모두 선택합니다 " />
+<meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
 <meta name="google-site-verification" content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
@@ -86,6 +320,7 @@
 
 <title>CSS 선택자를 알아보자!</title>
 </head>
+
 <body>
 
 	<div class="container">
@@ -97,7 +332,7 @@
           <!-- 탑배너 로고-->
           <div class="top__banner flex">  
             <a href="index.html">
-              <div class="img-box flex"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGVdkw%2FbtqQ1M4l9zK%2FZuk14hkbuXdFKKnYOnUEB0%2Fimg.png" alt=""></div>
+              <div class="img-box flex"><img src="img/logo.png" alt=""></div>
             </a>
           </div> 
 
@@ -108,7 +343,7 @@
             <!--게시판 목록 부분 (왼쪽 사이드바)-->
             <div class="top__boardMenu row flex">
               <ul>
-                <li class="cell "><a class ="point" href="#">Board</a>
+                <li class="cell"><a class ="point" href="#">Board</a>
                   <ul>
                    <li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
                   </ul>
@@ -149,7 +384,7 @@
 	
 <section class="con-min-width">
 	<div class="con">
-		<div class="section-3_detail flex"><div class="detail_1 flex"><span>CSS 선택자를 알아보자!</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-23 11:08:35</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🌈 CSS 기본선택자!
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>CSS 선택자를 알아보자!</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2020-12-23 11:08:35</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🌈 CSS 기본선택자!
 <br>
 ## 크게 3가지 선택자로 구분지을 수 있어요!
 
@@ -163,7 +398,7 @@
 
 ##### 부모 바로 밑의 직계자식을 선택합니다
 <br>
-```php-template
+```
 <section>
  <div>
  <cell>
@@ -183,7 +418,7 @@
 
 ##### 인접해있는(붙어있는) 형제 선택자를 선택합니다! 
 <br>
-```php-template
+```
 <section>
  <div1>
  <cell>
@@ -208,7 +443,7 @@
 
 ##### 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
 <br>
-```php-template
+```
 <section>
  <div1 class ="child">
  <cell>
@@ -227,8 +462,13 @@
 ##### 😃 section  cell 
 > section 에 속한 모든 cell 를 선택합니다. 
 ##### 😃 section  .child 
-> section 에 속한 클래스명이 .child인 엘리먼트를 모두 선택합니다. </div></div><div class="detail_4 flex"><div class="prev"><a href="IT-article-3.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="IT-article-5.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+> section 에 속한 클래스명이 .child인 엘리먼트를 모두 선택합니다. </div></div><div class="detail_4 flex"><div class="prev"><a href="article-3.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="article-5.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
 <script>
+	var disqus_config = function(){
+		this.page.url = 'https://blog.ljeya.org/article-4.html';
+		this.page.identifier = 'article-4.html'; 
+	};
+	
 	(function() {
 		var d = document, s = d.createElement('script');
 		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
@@ -249,7 +489,7 @@
 			</div>
 			<div class="img-box">
 				<img
-					src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc6ZH8K%2FbtqPYSY8vkt%2FgwbLp6dqod6dKimgQZrHA0%2Fimg.png"
+					src="img/footer_img.png"
 					alt="">
 			</div>
 			<div>

@@ -46,37 +46,142 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.ljeya.org" />
-<meta name="subject" content="코린이 제야의 개발블로그"/>
+<meta name="subject" content="MySQL 기본명령어 모음집_1탄"/>
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
-<meta name="pubdate" content="2020-12-31T01:22:42" />
-<meta name="lastmod" content="2020-12-31T01:22:42" />
+<meta name="pubdate" content="2021-01-03T06:42:10" />
+<meta name="lastmod" content="2021-01-03T06:42:10" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="코린이 제야의 개발블로그" />
-<meta property="og:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta property="og:title" content="MySQL 기본명령어 모음집_1탄" />
+<meta property="og:description" content=" 내가 보려고 만드는 MySQL 기본명령어 모읍집  1탄
+  데이터 조회하기
+설명순서는 큰 단위에서 작은 단위 순으로
+
+br
+br
+  데이터베이스 조회 aka 데이터가 모여있는 폴더
+ SHOW DATABASES
+  생성되어 있는 데이터베이스의 목록을 조회합니다 
+
+br
+
+  테이블 조회 aka 하나의 엑셀파일
+ SHOW TABLES
+  선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다 
+br
+
+ USE a1
+ a1 이라는 데이터베이스를 선택합니다 
+
+br
+
+ DESC 테이블명
+  선택한 테이블의 칼럼구조와 속성을 조회합니다
+br
+br
+br
+  ROW로우 조회를 위한 명령어 aka 엑셀파일의 한 행 실질적인 데이터가 들어있는 곳
+
+
+ SELECT id
+  id 칼럼의 row의 값을 선택하여 조회합니다
+br
+
+ SELECT id FROM article
+" />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:image" content="site/logo.png" />
+<meta property="og:image" content="site/img/logo.png" />
 <meta property="og:image:alt" content="blog.ljeya.org" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2020-12-31T01:22:42"/>
-<meta property="og:pubdate" content="2020-12-31T01:22:42" />
+<meta property="og:updated_time" content="2021-01-03T06:42:10"/>
+<meta property="og:pubdate" content="2021-01-03T06:42:10" />
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="코린이 제야의 개발블로그" />
+<meta name="twitter:title" content="MySQL 기본명령어 모음집_1탄" />
 <meta name="twitter:site" content="@JEYA-BLOG" />
 <meta name="twitter:creator" content="@JEYA-BLOG" />
-<meta name="twitter:image" content="site/logo.png">
-<meta name="twitter:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta name="twitter:image" content="site/img/logo.png">
+<meta name="twitter:description" content=" 내가 보려고 만드는 MySQL 기본명령어 모읍집  1탄
+  데이터 조회하기
+설명순서는 큰 단위에서 작은 단위 순으로
+
+br
+br
+  데이터베이스 조회 aka 데이터가 모여있는 폴더
+ SHOW DATABASES
+  생성되어 있는 데이터베이스의 목록을 조회합니다 
+
+br
+
+  테이블 조회 aka 하나의 엑셀파일
+ SHOW TABLES
+  선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다 
+br
+
+ USE a1
+ a1 이라는 데이터베이스를 선택합니다 
+
+br
+
+ DESC 테이블명
+  선택한 테이블의 칼럼구조와 속성을 조회합니다
+br
+br
+br
+  ROW로우 조회를 위한 명령어 aka 엑셀파일의 한 행 실질적인 데이터가 들어있는 곳
+
+
+ SELECT id
+  id 칼럼의 row의 값을 선택하여 조회합니다
+br
+
+ SELECT id FROM article
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="JEYA-BLOG" />
 <meta itemprop="name" content="JEYA-BLOG" />
-<meta itemprop="description" content="초보 개발자의 개발공부 블로그입니다." />
-<meta itemprop="image" content="site/logo.png" />
+<meta itemprop="description" content=" 내가 보려고 만드는 MySQL 기본명령어 모읍집  1탄
+  데이터 조회하기
+설명순서는 큰 단위에서 작은 단위 순으로
+
+br
+br
+  데이터베이스 조회 aka 데이터가 모여있는 폴더
+ SHOW DATABASES
+  생성되어 있는 데이터베이스의 목록을 조회합니다 
+
+br
+
+  테이블 조회 aka 하나의 엑셀파일
+ SHOW TABLES
+  선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다 
+br
+
+ USE a1
+ a1 이라는 데이터베이스를 선택합니다 
+
+br
+
+ DESC 테이블명
+  선택한 테이블의 칼럼구조와 속성을 조회합니다
+br
+br
+br
+  ROW로우 조회를 위한 명령어 aka 엑셀파일의 한 행 실질적인 데이터가 들어있는 곳
+
+
+ SELECT id
+  id 칼럼의 row의 값을 선택하여 조회합니다
+br
+
+ SELECT id FROM article
+" />
+<meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
 <meta name="google-site-verification" content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
@@ -84,8 +189,9 @@
 <!--css -->
 <link rel="stylesheet" href="app.css" />
 
-<title>💌사이트 안내</title>
+<title>MySQL 기본명령어 모음집_1탄</title>
 </head>
+
 <body>
 
 	<div class="container">
@@ -97,7 +203,7 @@
           <!-- 탑배너 로고-->
           <div class="top__banner flex">  
             <a href="index.html">
-              <div class="img-box flex"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGVdkw%2FbtqQ1M4l9zK%2FZuk14hkbuXdFKKnYOnUEB0%2Fimg.png" alt=""></div>
+              <div class="img-box flex"><img src="img/logo.png" alt=""></div>
             </a>
           </div> 
 
@@ -108,7 +214,7 @@
             <!--게시판 목록 부분 (왼쪽 사이드바)-->
             <div class="top__boardMenu row flex">
               <ul>
-                <li class="cell "><a class ="point" href="#">Board</a>
+                <li class="cell"><a class ="point" href="#">Board</a>
                   <ul>
                    <li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
                   </ul>
@@ -149,14 +255,48 @@
 	
 <section class="con-min-width">
 	<div class="con">
-		<div class="section-3_detail flex"><div class="detail_1 flex"><span>💌사이트 안내</span></div><div class="detail_2 flex"><div>작성일 : </div><div class="regDate">2020-12-20 03:25:50</div><div>작성자 :</div><div class="writer">제야</div><div>조회수</div><div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🎈안녕하세요 코린이 Je-ya입니다!<br/>
-Q. 이곳은 무슨 사이트 인가요?
-**이 블로그는 개발을 갓 배우기 시작한 제가 처음으로 만든 홈페이지 입니다!😎**
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>MySQL 기본명령어 모음집_1탄</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2020-12-21 03:25:50</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🚩내가 보려고 만드는 MySQL 기본명령어 모읍집 -- 1탄
+# 👀 데이터 조회하기!
+설명순서는 큰 단위에서 작은 단위 순으로!
+***
+<br>
+<br>
+## 🔎 데이터베이스 조회 (a.k.a 데이터가 모여있는 폴더)
+## `SHOW DATABASES;`
+##### 👉 생성되어 있는 데이터베이스의 목록을 조회합니다. 
+
+<br>
+
+## 🔎 테이블 조회 (a.k.a 하나의 엑셀파일)
+## `SHOW TABLES`;
+##### 👉 선택되어 있는 데이터베이스 안에 만들어져 있는 테이블들의 목록을 조회합니다. 
+<br>
 ```
-개발 공부와 관련된 글들과 직접 만든 디자인물 등을 업로드하려고 해요?
-아직은 많이 부족하지만😂배우고 있는 기능들로 계속 업데이트하겠습니다 :)
-```</div></div><div class="detail_4 flex"><div class="article_list"><a href="Notice-1.html">목록으로돌아가기</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+✅ USE a1;
+---- 'a1' 이라는 데이터베이스를 선택합니다. 
+```
+<br>
+
+## `DESC '테이블명';`
+##### 👉 선택한 테이블의 칼럼구조와 속성을 조회합니다.
+<br>
+<br>
+<br>
+## 🔎 ROW(로우) 조회를 위한 명령어 (a.k.a 엑셀파일의 한 행, 실질적인 데이터가 들어있는 곳)
+
+
+## `SELECT id;`
+##### 👉 id 칼럼의 row의 값을 선택하여 조회합니다.
+<br>
+```
+✅ SELECT id FROM article;
+--</div></div><div class="detail_4 flex"><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="article-3.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
 <script>
+	var disqus_config = function(){
+		this.page.url = 'https://blog.ljeya.org/article-2.html';
+		this.page.identifier = 'article-2.html'; 
+	};
+	
 	(function() {
 		var d = document, s = d.createElement('script');
 		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
@@ -177,7 +317,7 @@ Q. 이곳은 무슨 사이트 인가요?
 			</div>
 			<div class="img-box">
 				<img
-					src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc6ZH8K%2FbtqPYSY8vkt%2FgwbLp6dqod6dKimgQZrHA0%2Fimg.png"
+					src="img/footer_img.png"
 					alt="">
 			</div>
 			<div>
