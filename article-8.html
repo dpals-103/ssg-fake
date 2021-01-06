@@ -46,7 +46,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.ljeya.org" />
-<meta name="subject" content="CSS 선택자를 알아보자!"/>
+<meta name="subject" content="JEYA-BLOG 탄생로그 -- 3"/>
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
@@ -55,86 +55,24 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="CSS 선택자를 알아보자!" />
-<meta property="og:description" content="  CSS 기본선택자
-br
- 크게 3가지 선택자로 구분지을 수 있어요
+<meta property="og:title" content="JEYA-BLOG 탄생로그 -- 3" />
+<meta property="og:description" content=" JEYABLOG 탄생로그
+ 메인 홈 디자인 잡기 
+youtube
+ThLyBjKoA
 
- 자식선택자
 
- 형제선택자
+프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
+잘 맞을까 수도 없어 고민하고 있는데 
+이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
+재밌다고 느끼는 거 같다 
+백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
+그 과정이 나에게는 아직 버겁다 
+  
+그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다 
+좀 더 고쳐보려고 노력하게 되고 더 욕심내서 코드를 짜려고 하게 된다 
 
- 후손손자선택자
-br
-  자식 선택자   
-
- 부모 바로 밑의 직계자식을 선택합니다
-br
-
-section
- div
- cell
- cell
- div
- div
- cell
- cell
- div
-section
-
- section  div 
- div 2개가 선택됩니다 
-br
-br
-  인접형제 선택자   
-
- 인접해있는붙어있는 형제 선택자를 선택합니다 
-br
-
-section
- div1
- cell
- cell
- div1
- div2
- cell
- cell
- div2
- div3
- cell
- cell
- div3
-section
-
-  section  div1  div2 
-  div1과 인접해있는 div2를 선택할 수 있습니다
-  인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다 
-br
-br
-  후손손자선택자   
-
- 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
-br
-
-section
- div1 class child
- cell
- cell
- div1
- div2 class child
- cell
- cell
- div2
- div3 class child
- cell
- cell
- div3
-section
-
-  section  cell 
- section 에 속한 모든 cell 를 선택합니다 
-  section  child 
- section 에 속한 클래스명이 child인 엘리먼트를 모두 선택합니다 " />
+  " />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="site/img/logo.png" />
 <meta property="og:image:alt" content="blog.ljeya.org" />
@@ -145,171 +83,47 @@ section
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="CSS 선택자를 알아보자!" />
+<meta name="twitter:title" content="JEYA-BLOG 탄생로그 -- 3" />
 <meta name="twitter:site" content="@JEYA-BLOG" />
 <meta name="twitter:creator" content="@JEYA-BLOG" />
 <meta name="twitter:image" content="site/img/logo.png">
-<meta name="twitter:description" content="  CSS 기본선택자
-br
- 크게 3가지 선택자로 구분지을 수 있어요
+<meta name="twitter:description" content=" JEYABLOG 탄생로그
+ 메인 홈 디자인 잡기 
+youtube
+ThLyBjKoA
 
- 자식선택자
 
- 형제선택자
+프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
+잘 맞을까 수도 없어 고민하고 있는데 
+이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
+재밌다고 느끼는 거 같다 
+백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
+그 과정이 나에게는 아직 버겁다 
+  
+그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다 
+좀 더 고쳐보려고 노력하게 되고 더 욕심내서 코드를 짜려고 하게 된다 
 
- 후손손자선택자
-br
-  자식 선택자   
-
- 부모 바로 밑의 직계자식을 선택합니다
-br
-
-section
- div
- cell
- cell
- div
- div
- cell
- cell
- div
-section
-
- section  div 
- div 2개가 선택됩니다 
-br
-br
-  인접형제 선택자   
-
- 인접해있는붙어있는 형제 선택자를 선택합니다 
-br
-
-section
- div1
- cell
- cell
- div1
- div2
- cell
- cell
- div2
- div3
- cell
- cell
- div3
-section
-
-  section  div1  div2 
-  div1과 인접해있는 div2를 선택할 수 있습니다
-  인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다 
-br
-br
-  후손손자선택자   
-
- 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
-br
-
-section
- div1 class child
- cell
- cell
- div1
- div2 class child
- cell
- cell
- div2
- div3 class child
- cell
- cell
- div3
-section
-
-  section  cell 
- section 에 속한 모든 cell 를 선택합니다 
-  section  child 
- section 에 속한 클래스명이 child인 엘리먼트를 모두 선택합니다 " />
+  " />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="JEYA-BLOG" />
 <meta itemprop="name" content="JEYA-BLOG" />
-<meta itemprop="description" content="  CSS 기본선택자
-br
- 크게 3가지 선택자로 구분지을 수 있어요
+<meta itemprop="description" content=" JEYABLOG 탄생로그
+ 메인 홈 디자인 잡기 
+youtube
+ThLyBjKoA
 
- 자식선택자
 
- 형제선택자
+프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
+잘 맞을까 수도 없어 고민하고 있는데 
+이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
+재밌다고 느끼는 거 같다 
+백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
+그 과정이 나에게는 아직 버겁다 
+  
+그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다 
+좀 더 고쳐보려고 노력하게 되고 더 욕심내서 코드를 짜려고 하게 된다 
 
- 후손손자선택자
-br
-  자식 선택자   
-
- 부모 바로 밑의 직계자식을 선택합니다
-br
-
-section
- div
- cell
- cell
- div
- div
- cell
- cell
- div
-section
-
- section  div 
- div 2개가 선택됩니다 
-br
-br
-  인접형제 선택자   
-
- 인접해있는붙어있는 형제 선택자를 선택합니다 
-br
-
-section
- div1
- cell
- cell
- div1
- div2
- cell
- cell
- div2
- div3
- cell
- cell
- div3
-section
-
-  section  div1  div2 
-  div1과 인접해있는 div2를 선택할 수 있습니다
-  인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다 
-br
-br
-  후손손자선택자   
-
- 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
-br
-
-section
- div1 class child
- cell
- cell
- div1
- div2 class child
- cell
- cell
- div2
- div3 class child
- cell
- cell
- div3
-section
-
-  section  cell 
- section 에 속한 모든 cell 를 선택합니다 
-  section  child 
- section 에 속한 클래스명이 child인 엘리먼트를 모두 선택합니다 " />
+  " />
 <meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
@@ -318,7 +132,7 @@ section
 <!--css -->
 <link rel="stylesheet" href="app.css" />
 
-<title>CSS 선택자를 알아보자!</title>
+<title>JEYA-BLOG 탄생로그 -- 3</title>
 </head>
 
 <body>
@@ -384,89 +198,27 @@ section
 	
 <section class="con-min-width">
 	<div class="con">
-		<div class="section-3_detail flex"><div class="detail_1 flex"><span>CSS 선택자를 알아보자!</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2020-12-23 11:08:35</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🌈 CSS 기본선택자!
-<br>
-## 크게 3가지 선택자로 구분지을 수 있어요!
-
-## 👉`자식선택자;`
-
-## 👉`형제선택자;`
-
-## 👉`후손(손자)선택자;`
-<br>
-## ✅ 자식 선택자 ' > '
-
-##### 부모 바로 밑의 직계자식을 선택합니다
-<br>
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>JEYA-BLOG 탄생로그 -- 3</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2021-01-07 04:23:06</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># JEYA-BLOG 탄생로그💚
+> 메인 홈 디자인 잡기 
+```youtube
+T-hLyBj-KoA
 ```
-<section>
- <div>
- <cell>
- </cell>
- </div>
- <div>
- <cell>
- </cell>
- </div>
-</section>
-```
-##### 😃section > div 
-> div 2개가 선택됩니다. 
-<br>
-<br>
-## ✅ 인접형제 선택자 ' + '
 
-##### 인접해있는(붙어있는) 형제 선택자를 선택합니다! 
-<br>
-```
-<section>
- <div1>
- <cell>
- </cell>
- </div1>
- <div2>
- <cell>
- </cell>
- </div2>
- <div3>
- <cell>
- </cell>
- </div3>
-</section>
-```
-##### 😃 section > div1 + div2 
-> : div1과 인접해있는 div2를 선택할 수 있습니다.
-> : 인접된 형제를 선택하므로  div1은 div3은 선택할 수 없습니다. 
-<br>
-<br>
-## ✅ 후손(손자)선택자  " "
+프론트와 백을 함께 배우면서 내 적성에는 뭐가 제일
+잘 맞을까 수도 없어 고민하고 있는데 
+이 사이트 만드는 과정을 통해서 확실히 나는 프론트를 더 
+재밌다고 느끼는 거 같다. 
+백엔드 부분은 어려운 문제를 풀어냈을 때의 느끼는 쾌감 같을 걸 느낄 수 있지만
+그 과정이 나에게는 아직 버겁다... 
+  
+그에 비해 프론트엔드는 내가 작성하는 코드가 구현된 모습을 바로바로 볼 수 있는게 재밌게 느껴진다. 
+좀 더 고쳐보려고 노력하게 되고, 더 욕심내서 코드를 짜려고 하게 된다. 
 
-##### 해당 엘리먼트에 속한 자식 또는 후손을 모두 선택할 수 있습니다 
-<br>
-```
-<section>
- <div1 class ="child">
- <cell>
- </cell>
- </div1>
- <div2 class ="child">
- <cell>
- </cell>
- </div2>
- <div3 class ="child">
- <cell>
- </cell>
- </div3>
-</section>
-```
-##### 😃 section  cell 
-> section 에 속한 모든 cell 를 선택합니다. 
-##### 😃 section  .child 
-> section 에 속한 클래스명이 .child인 엘리먼트를 모두 선택합니다. </div></div><div class="detail_4 flex"><div class="prev"><a href="article-3.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div><div class="next"><a href="article-5.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+  </div></div><div class="detail_4 flex"><div class="prev"><a href="article-7.html"> &lt; 이전글 </a></div><div class="article_list"><a href="StudyLog-1.html">목록으로돌아가기</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
 <script>
 	var disqus_config = function(){
-		this.page.url = 'https://blog.ljeya.org/article-4.html';
-		this.page.identifier = 'article-4.html'; 
+		this.page.url = 'https://blog.ljeya.org/article-8.html';
+		this.page.identifier = 'article-8.html'; 
 	};
 	
 	(function() {
