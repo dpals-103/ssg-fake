@@ -94,7 +94,7 @@
 <!--css -->
 <link rel="stylesheet" href="app.css" />
 
-<title>JEYA-BLOG | 🏠Home</title>
+<title>JEYA-BLOG | 🔎Search Post</title>
 </head>
 
 <body>
@@ -137,28 +137,57 @@
 
 				</div>
 		</header>
-		<!-----------헤더 끝---------------------------------->
-<section class="con-min-width">
+		<!-----------헤더 끝----------------------------------><!----------섹션 시작---------------------------------->
+
+<!--loadash 불러오기-->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
+<!--vue 불러오기-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<section id="list-vue" class="con-min-width main">
 	<div class="con">
-		<div class="section-1__home main-img flex">
-			<div class="img-1">
-				<img
-					src="img/main_1.jpg"
-					alt="">
+		<div class="section-2__list flex .main">
+
+			<div class="title">🔎Search Post</div>
+
+			<div class="search flex">
+				<form action="">
+					<input @input="searchKeyWordInputed" v-model="searchKeyWord"
+						type="text" :value="searchKeyWord" placeholder="검색어를 입력하세요">
+				</form>
 			</div>
-			<div class="img-2">
-				<img
-					src="img/main_2.jpg"
-					alt="">
-			</div>
-			<div class="text-box">
-				<span class="text-1">Welcome! :)</span><br>
-				<br> <span class="text-2">Hi, I'm Je-Ya😊<br>This blog is a site where posts on coding skills <br>that I am studying and design works I made are uploaded.
-				<br>Thank you for your visit. Look around freely.</span>
-			</div>
+
+			<header>
+				<div class="list flex">
+					<div class="list__title">제목</div>
+					<div class="list__writer">작성자</div>
+					<div class="list__count">조회수</div>
+					<div class="list__likes">추천수</div>
+					<div class="list__regDate">날짜</div>
+				</div>
+			</header>
+
+			<main>
+				<div v-for="article in filtered" class="list flex">
+					<div class="list__title"><a :href="'article-' + article.id + '.html'" target="_blank">
+					{{article.title}}</a></div>
+					<div class="list__writer">{{article.writer}}</div>
+					<div class="list__count">{{article.count}}</div>
+					<div class="list__likes">{{article.likes}}</div>
+					<div class="list__regDate">{{article.regDate}}</div>
+				</div>
+			</main>
+
+
 		</div>
 	</div>
-</section><!-----------푸터 시작---------------------------------->
+	<script src="listVue.js"></script>
+</section>
+
+
+<!-----------섹션 끝----------------------------------> <!-----------푸터 시작---------------------------------->
 <footer class="bottom con-min-width main">
 	<div class="con">
 		<div class="bottom-bar flex">

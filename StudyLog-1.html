@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJBTE5EBQ2"></script>
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-VJBTE5EBQ2"></script>
 
 <!-- 구글 애드센스 -->
-<script data-ad-client="ca-pub-3581650995417063" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-ad-client="ca-pub-3581650995417063" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
 
-  gtag('config', 'G-VJBTE5EBQ2');
+	gtag('config', 'G-VJBTE5EBQ2');
 </script>
+
+<!--제이쿼리 불러오기-->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 <!-- 파비콘 -->
 <link rel=" shortcut icon" href="favicon.ico">
@@ -46,12 +55,12 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.ljeya.org" />
-<meta name="subject" content="코린이 제야의 개발블로그"/>
+<meta name="subject" content="코린이 제야의 개발블로그" />
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
-<meta name="pubdate" content="2021-01-08T01:49:17" />
-<meta name="lastmod" content="2021-01-08T01:49:17" />
+<meta name="pubdate" content="2021-01-19T03:31:31" />
+<meta name="lastmod" content="2021-01-19T03:31:31" />
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
@@ -62,8 +71,8 @@
 <meta property="og:image:alt" content="blog.ljeya.org" />
 <meta property="og:image:width" content="486" />
 <meta property="og:image:height" content="254" />
-<meta property="og:updated_time" content="2021-01-08T01:49:17"/>
-<meta property="og:pubdate" content="2021-01-08T01:49:17" />
+<meta property="og:updated_time" content="2021-01-19T03:31:31" />
+<meta property="og:pubdate" content="2021-01-19T03:31:31" />
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -79,7 +88,8 @@
 <meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
-<meta name="google-site-verification" content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
+<meta name="google-site-verification"
+	content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
 
 <!--css -->
 <link rel="stylesheet" href="app.css" />
@@ -91,45 +101,46 @@
 
 	<div class="container">
 
-<!-----------헤더 시작---------------------------------->
-      <header class="top con-min-width">
-        <div class="con">
+		<!-----------헤더 시작---------------------------------->
+		<header class="top con-min-width">
+			<div class="con">
 
-          <!-- 탑배너 로고-->
-          <div class="top__banner flex">  
-            <a href="index.html">
-              <div class="img-box flex"><img src="img/logo.png" alt=""></div>
-            </a>
-          </div> 
+				<!-- 탑배너 로고-->
+				<div class="top__banner flex">
+					<a href="index.html">
+						<div class="img-box flex">
+							<img src="img/logo.png" alt="">
+						</div>
+					</a>
+				</div>
 
 
-          <!-- 메뉴바 부분-->
-          <div class="top__menuBar flex">
+				<!-- 메뉴바 부분-->
+				<div class="top__menuBar flex">
+					<div class="top__searchMenu">
+							<div>
+								<a href="searchPost.html">Search</a>
+							</div>
+						</div>
 
-            <!--게시판 목록 부분 (왼쪽 사이드바)-->
-            <div class="top__boardMenu row flex">
-              <ul>
-                <li class="cell"><a class ="point" href="#">Board</a>
-                  <ul>
-                   <li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <!--기타 정보 부분 (오른쪽 메뉴나열)-->
-            <ul class="top__basicMenu row flex ">
-              <li class="cell"><a href="index.html">Home</a></li>
-              <li class="cell"><a href="about.html">About</a></li>
-              <li class="cell"><a href="social.html">Social</a></li>
-              <li class="cell"><a href="stats.html">Data</a></li>
-            </ul>  
-          </div>
+						<!--기타 정보 부분 (오른쪽 메뉴나열)-->
+						<ul class="top__basicMenu row flex ">
+							<li class="cell"><a href="index.html">Home</a></li>
+							<li class="cell board"><a href="board.html">Board</a>
+								<ul><li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
+								</ul></li>
+							<li class="cell"><a href="about.html">About</a></li>
+							<li class="cell"><a href="social.html">Social</a></li>
+							<li class="cell"><a href="stats.html">Data</a></li>
+						</ul>
+					</div>
 
-        </div>
-      </header>
-      <!-----------헤더 끝---------------------------------->
+				</div>
+		</header>
+		<!-----------헤더 끝---------------------------------->
 <!----------섹션 시작---------------------------------->
-<section class="con-min-width main">
+
+<section id="list-vue" class="con-min-width main">
 	<div class="con">
 		<div class="section-2__list flex .main">
 
@@ -147,7 +158,7 @@
 			</header>
 
 			<main>
-				<!-----------섹션 끝----------------------------------><div class = "list flex"> <div class="list__title flex"><a href ="article-8.html">JEYA-BLOG 탄생로그 -- 3</a></div> <div class="list__writer">제야</div> <div class="list__count">0</div> <div class="list__likes">0</div> <div class="list__regDate">2021-01-07 04:23:06</div></div><div class = "list flex"> <div class="list__title flex"><a href ="article-7.html">JEYA-BLOG 탄생로그 -- 2</a></div> <div class="list__writer">제야</div> <div class="list__count">0</div> <div class="list__likes">0</div> <div class="list__regDate">2021-01-07 04:14:11</div></div><div class = "list flex"> <div class="list__title flex"><a href ="article-6.html">JEYA-BLOG 탄생로그 -- 1</a></div> <div class="list__writer">제야</div> <div class="list__count">0</div> <div class="list__likes">0</div> <div class="list__regDate">2020-12-29 01:06:14</div></div></main><ul class="page flex"><li class ="list__link--selected"><a href="StudyLog-1.html">1</a><li></ul></div></section><!-----------푸터 시작---------------------------------->
+				<!-----------섹션 끝----------------------------------><div class = "list flex"> <div class="list__title flex"><a href ="article-11.html">JEYA-BLOG 탄생로그 -- 4</a></div> <div class="list__writer">제야</div> <div class="list__count">0</div> <div class="list__likes">0</div> <div class="list__regDate">2021-01-18 01:45:16</div></div><div class = "list flex"> <div class="list__title flex"><a href ="article-8.html">JEYA-BLOG 탄생로그 -- 3</a></div> <div class="list__writer">제야</div> <div class="list__count">2</div> <div class="list__likes">0</div> <div class="list__regDate">2021-01-07 04:23:06</div></div><div class = "list flex"> <div class="list__title flex"><a href ="article-7.html">JEYA-BLOG 탄생로그 -- 2</a></div> <div class="list__writer">제야</div> <div class="list__count">0</div> <div class="list__likes">0</div> <div class="list__regDate">2021-01-07 04:14:11</div></div><div class = "list flex"> <div class="list__title flex"><a href ="article-6.html">JEYA-BLOG 탄생로그 -- 1</a></div> <div class="list__writer">제야</div> <div class="list__count">3</div> <div class="list__likes">0</div> <div class="list__regDate">2020-12-29 01:06:14</div></div></main><ul class="page flex"><li class ="list__link--selected"><a href="StudyLog-1.html">1</a><li></ul></div></section><!-----------푸터 시작---------------------------------->
 <footer class="bottom con-min-width main">
 	<div class="con">
 		<div class="bottom-bar flex">

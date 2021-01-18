@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-VJBTE5EBQ2"></script>
+
+<!-- 구글 애드센스 -->
+<script data-ad-client="ca-pub-3581650995417063" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-VJBTE5EBQ2');
+</script>
+
+<!--제이쿼리 불러오기-->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- 파비콘 -->
+<link rel=" shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico">
+
+<!-- 
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+ -->
+
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-title" content="JEYA-BLOG" />
+<!-- 메타태그정보 //-->
+<!-- META -->
+<link rel="canonical" href="https://blog.ljeya.org" />
+<meta name="subject" content="CSS flex_container 속성 2탄!" />
+<meta name="title" content="JEYA-BLOG" />
+<meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
+<meta name="copyright" content="JEYA-BLOG" />
+<meta name="pubdate" content="2021-01-19T03:31:31" />
+<meta name="lastmod" content="2021-01-19T03:31:31" />
+<!-- OPENGRAPH -->
+<meta property="og:site_name" content="JEYA-BLOG" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CSS flex_container 속성 2탄!" />
+<meta property="og:description" content="  CSS displayflex 공부하기   container 속성 2탄
+  justifycontent 주축 기준
+  ailgncontent 교차축 기준
+br
+br
+  justifycontent
+ 주축의 정렬방법을 설정합니다 
+ 여기서 주축mainaxis이란 정렬된 아이템들의 중앙을관통하는 하나의 축직선을 말합니다 
+br
+   start    end 
+br
+br
+ flexstart 기본값
+ 아이템들의 시작점에 붙어 정렬합니다  
+br
+  direction이 row일때 
+br
+
+1 2 3    
+
+br
+  direction이 rowreverse일때 
+br
+
+   3 2 1
+
+br
+  direction이 column일때  
+br
+
+
+1
+2 
+3     
+
+
+
+br
+  direction이 columnreverse일때 
+br
+
+
+
+3 
+2 
+1
+
+
+br
+br
+ flexend
+ 아이템들의 끝점에 붙어 정렬합니다  
+br
+  direction이 row일때 
+   start    end 
+br
+
+   1 2 3
+
+br
+  direction이 rowreverse일때 
+br
+
+3 2 1   
+
+br
+  direction이 column일때  
+br
+
+
+
+1
+2 
+3     
+
+
+br
+  direction이 columnreverse일때 
+br
+
+
+3
+2
+1
+
+
+
+br
+
+ center
+ 아이템을 가운데 정렬 합니다   
+br
+  direction이 row일때 
+br
+
+   1 2 3   
+
+br
+
+  direction이 column일때  
+br
+
+
+
+1
+2 
+3     
+
+
+
+br
+br
+ spacebetween
+ 시작 아이템은 시작점에 마지막 아이템은 끝점에 붙이고 나머지의 간격은 고르게 정렬합니다    
+br
+  direction이 row일때 
+br
+
+1  2  3
+
+br
+
+  direction이 column일때  
+br
+
+
+1
+
+2
+
+3     
+
+
+br
+br
+ spacearound
+ 아이템들의 여백을 균등하게 정렬합니다    
+br
+  direction이 row일때 
+br
+
+ 1  2  3 
+
+br
+
+  direction이 column일때  
+br
+
+
+
+1
+
+2
+
+3     
+
+
+
+br
+br
+br
+  aligncontent
+ 교차축의 정렬방법을 설정합니다 
+ 여기서 교차축crossaxis이란 정렬된 아이템들이 row일 때는 수직방향 column일때는 수평방향의 축을 말합니다 주축과 반대방향 
+br
+   start    end 
+br
+br
+ stretch 기본값
+ 교차축을 채우기 위해 아이템을 늘립니다 
+br
+br 
+ flexstart
+ 아이템들을 각 줄의 시작점에 붙여 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+1 2 3
+
+
+
+
+br
+  direction이 column일때  
+br
+
+1    
+2   
+3   
+
+br
+br
+ flexend
+ 아이템들을 각 줄의 끝점에 붙여 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+
+
+1 2 3
+
+
+br
+  direction이 column일때  
+br
+
+   1 
+   2
+   3
+
+br
+br
+ center
+ 아이템들을 각 줄의 중앙에 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+
+1 2 3
+
+
+
+br
+  direction이 column일때  
+br
+
+  1   
+  2  
+  3  
+
+br
+br
+ baseline
+ 아이템들의 문자 기준선에 정렬합니다  
+br
+  direction이 row일때 
+br
+
+1 2 3
+
+
+
+br
+  direction이 column일때  
+br
+
+ 
+    
+   
+   
+1   
+2  
+3  
+   
+ 
+ 
+
+br
+br
+  다음편에는 flexItem 속성에 대해서" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image" content="site/img/logo.png" />
+<meta property="og:image:alt" content="blog.ljeya.org" />
+<meta property="og:image:width" content="486" />
+<meta property="og:image:height" content="254" />
+<meta property="og:updated_time" content="2021-01-19T03:31:31" />
+<meta property="og:pubdate" content="2021-01-19T03:31:31" />
+<meta property="og:url" content="https://blog.ljeya.org" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="CSS flex_container 속성 2탄!" />
+<meta name="twitter:site" content="@JEYA-BLOG" />
+<meta name="twitter:creator" content="@JEYA-BLOG" />
+<meta name="twitter:image" content="site/img/logo.png">
+<meta name="twitter:description" content="  CSS displayflex 공부하기   container 속성 2탄
+  justifycontent 주축 기준
+  ailgncontent 교차축 기준
+br
+br
+  justifycontent
+ 주축의 정렬방법을 설정합니다 
+ 여기서 주축mainaxis이란 정렬된 아이템들의 중앙을관통하는 하나의 축직선을 말합니다 
+br
+   start    end 
+br
+br
+ flexstart 기본값
+ 아이템들의 시작점에 붙어 정렬합니다  
+br
+  direction이 row일때 
+br
+
+1 2 3    
+
+br
+  direction이 rowreverse일때 
+br
+
+   3 2 1
+
+br
+  direction이 column일때  
+br
+
+
+1
+2 
+3     
+
+
+
+br
+  direction이 columnreverse일때 
+br
+
+
+
+3 
+2 
+1
+
+
+br
+br
+ flexend
+ 아이템들의 끝점에 붙어 정렬합니다  
+br
+  direction이 row일때 
+   start    end 
+br
+
+   1 2 3
+
+br
+  direction이 rowreverse일때 
+br
+
+3 2 1   
+
+br
+  direction이 column일때  
+br
+
+
+
+1
+2 
+3     
+
+
+br
+  direction이 columnreverse일때 
+br
+
+
+3
+2
+1
+
+
+
+br
+
+ center
+ 아이템을 가운데 정렬 합니다   
+br
+  direction이 row일때 
+br
+
+   1 2 3   
+
+br
+
+  direction이 column일때  
+br
+
+
+
+1
+2 
+3     
+
+
+
+br
+br
+ spacebetween
+ 시작 아이템은 시작점에 마지막 아이템은 끝점에 붙이고 나머지의 간격은 고르게 정렬합니다    
+br
+  direction이 row일때 
+br
+
+1  2  3
+
+br
+
+  direction이 column일때  
+br
+
+
+1
+
+2
+
+3     
+
+
+br
+br
+ spacearound
+ 아이템들의 여백을 균등하게 정렬합니다    
+br
+  direction이 row일때 
+br
+
+ 1  2  3 
+
+br
+
+  direction이 column일때  
+br
+
+
+
+1
+
+2
+
+3     
+
+
+
+br
+br
+br
+  aligncontent
+ 교차축의 정렬방법을 설정합니다 
+ 여기서 교차축crossaxis이란 정렬된 아이템들이 row일 때는 수직방향 column일때는 수평방향의 축을 말합니다 주축과 반대방향 
+br
+   start    end 
+br
+br
+ stretch 기본값
+ 교차축을 채우기 위해 아이템을 늘립니다 
+br
+br 
+ flexstart
+ 아이템들을 각 줄의 시작점에 붙여 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+1 2 3
+
+
+
+
+br
+  direction이 column일때  
+br
+
+1    
+2   
+3   
+
+br
+br
+ flexend
+ 아이템들을 각 줄의 끝점에 붙여 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+
+
+1 2 3
+
+
+br
+  direction이 column일때  
+br
+
+   1 
+   2
+   3
+
+br
+br
+ center
+ 아이템들을 각 줄의 중앙에 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+
+1 2 3
+
+
+
+br
+  direction이 column일때  
+br
+
+  1   
+  2  
+  3  
+
+br
+br
+ baseline
+ 아이템들의 문자 기준선에 정렬합니다  
+br
+  direction이 row일때 
+br
+
+1 2 3
+
+
+
+br
+  direction이 column일때  
+br
+
+ 
+    
+   
+   
+1   
+2  
+3  
+   
+ 
+ 
+
+br
+br
+  다음편에는 flexItem 속성에 대해서" />
+<!-- GOOGLE+ -->
+<meta itemprop="headline" content="JEYA-BLOG" />
+<meta itemprop="name" content="JEYA-BLOG" />
+<meta itemprop="description" content="  CSS displayflex 공부하기   container 속성 2탄
+  justifycontent 주축 기준
+  ailgncontent 교차축 기준
+br
+br
+  justifycontent
+ 주축의 정렬방법을 설정합니다 
+ 여기서 주축mainaxis이란 정렬된 아이템들의 중앙을관통하는 하나의 축직선을 말합니다 
+br
+   start    end 
+br
+br
+ flexstart 기본값
+ 아이템들의 시작점에 붙어 정렬합니다  
+br
+  direction이 row일때 
+br
+
+1 2 3    
+
+br
+  direction이 rowreverse일때 
+br
+
+   3 2 1
+
+br
+  direction이 column일때  
+br
+
+
+1
+2 
+3     
+
+
+
+br
+  direction이 columnreverse일때 
+br
+
+
+
+3 
+2 
+1
+
+
+br
+br
+ flexend
+ 아이템들의 끝점에 붙어 정렬합니다  
+br
+  direction이 row일때 
+   start    end 
+br
+
+   1 2 3
+
+br
+  direction이 rowreverse일때 
+br
+
+3 2 1   
+
+br
+  direction이 column일때  
+br
+
+
+
+1
+2 
+3     
+
+
+br
+  direction이 columnreverse일때 
+br
+
+
+3
+2
+1
+
+
+
+br
+
+ center
+ 아이템을 가운데 정렬 합니다   
+br
+  direction이 row일때 
+br
+
+   1 2 3   
+
+br
+
+  direction이 column일때  
+br
+
+
+
+1
+2 
+3     
+
+
+
+br
+br
+ spacebetween
+ 시작 아이템은 시작점에 마지막 아이템은 끝점에 붙이고 나머지의 간격은 고르게 정렬합니다    
+br
+  direction이 row일때 
+br
+
+1  2  3
+
+br
+
+  direction이 column일때  
+br
+
+
+1
+
+2
+
+3     
+
+
+br
+br
+ spacearound
+ 아이템들의 여백을 균등하게 정렬합니다    
+br
+  direction이 row일때 
+br
+
+ 1  2  3 
+
+br
+
+  direction이 column일때  
+br
+
+
+
+1
+
+2
+
+3     
+
+
+
+br
+br
+br
+  aligncontent
+ 교차축의 정렬방법을 설정합니다 
+ 여기서 교차축crossaxis이란 정렬된 아이템들이 row일 때는 수직방향 column일때는 수평방향의 축을 말합니다 주축과 반대방향 
+br
+   start    end 
+br
+br
+ stretch 기본값
+ 교차축을 채우기 위해 아이템을 늘립니다 
+br
+br 
+ flexstart
+ 아이템들을 각 줄의 시작점에 붙여 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+1 2 3
+
+
+
+
+br
+  direction이 column일때  
+br
+
+1    
+2   
+3   
+
+br
+br
+ flexend
+ 아이템들을 각 줄의 끝점에 붙여 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+
+
+1 2 3
+
+
+br
+  direction이 column일때  
+br
+
+   1 
+   2
+   3
+
+br
+br
+ center
+ 아이템들을 각 줄의 중앙에 정렬합니다  
+br
+  direction이 row일때 
+br
+
+    
+
+1 2 3
+
+
+
+br
+  direction이 column일때  
+br
+
+  1   
+  2  
+  3  
+
+br
+br
+ baseline
+ 아이템들의 문자 기준선에 정렬합니다  
+br
+  direction이 row일때 
+br
+
+1 2 3
+
+
+
+br
+  direction이 column일때  
+br
+
+ 
+    
+   
+   
+1   
+2  
+3  
+   
+ 
+ 
+
+br
+br
+  다음편에는 flexItem 속성에 대해서" />
+<meta itemprop="image" content="site/img/logo.png" />
+
+<!-- 구글 소유권 확인 메타태그 -->
+<meta name="google-site-verification"
+	content="FMeDBTNNwUmSnehpaqlFZHq9_r_b8ItDaQqR79DRLMs" />
+
+<!--css -->
+<link rel="stylesheet" href="app.css" />
+
+<title>CSS flex_container 속성 2탄!</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-----------헤더 시작---------------------------------->
+		<header class="top con-min-width">
+			<div class="con">
+
+				<!-- 탑배너 로고-->
+				<div class="top__banner flex">
+					<a href="index.html">
+						<div class="img-box flex">
+							<img src="img/logo.png" alt="">
+						</div>
+					</a>
+				</div>
+
+
+				<!-- 메뉴바 부분-->
+				<div class="top__menuBar flex">
+					<div class="top__searchMenu">
+							<div>
+								<a href="searchPost.html">Search</a>
+							</div>
+						</div>
+
+						<!--기타 정보 부분 (오른쪽 메뉴나열)-->
+						<ul class="top__basicMenu row flex ">
+							<li class="cell"><a href="index.html">Home</a></li>
+							<li class="cell board"><a href="board.html">Board</a>
+								<ul><li><a href="Notice-1.html">Notice</a></li><li><a href="IT-1.html">IT</a></li><li><a href="StudyLog-1.html">StudyLog</a></li>
+								</ul></li>
+							<li class="cell"><a href="about.html">About</a></li>
+							<li class="cell"><a href="social.html">Social</a></li>
+							<li class="cell"><a href="stats.html">Data</a></li>
+						</ul>
+					</div>
+
+				</div>
+		</header>
+		<!-----------헤더 끝----------------------------------><!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+	
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+	
+<section class="con-min-width">
+	<div class="con">
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>CSS flex_container 속성 2탄!</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2021-01-18 01:32:49</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># 🌈 CSS display:flex 공부하기 -  container 속성 2탄
+# ✅ justify-content (주축 기준)
+# ✅ ailgn-content (교차축 기준)
+<br>
+<br>
+# 📐 justify-content
+## 주축의 정렬방법을 설정합니다! 
+#### 여기서 주축(main-axis)이란 정렬된 아이템들의 중앙을관통하는 하나의 축(직선)을 말합니다. 
+<br>
+#### 🔶 --> start  / 🔷--> end 
+<br>
+<br>
+## `flex-start (기본값)`
+#### 아이템들의 시작점에 붙어 정렬합니다.  
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶1️⃣ 2️⃣ 3️⃣    🔷
+```
+<br>
+#### 👉 direction이 row-reverse일때 
+<br>
+```
+🔷   3️⃣ 2️⃣ 1️⃣🔶
+```
+<br>
+#### 👉 direction이 column일때  
+<br>
+```
+🔶
+1️⃣
+2️⃣ 
+3️⃣     
+
+🔷
+```
+<br>
+#### 👉 direction이 column-reverse일때 
+<br>
+```
+🔷
+
+3️⃣ 
+2️⃣ 
+1️⃣
+🔶
+```
+<br>
+<br>
+## `flex-end`
+#### 아이템들의 끝점에 붙어 정렬합니다.  
+<br>
+#### 👉 direction이 row일때 
+#### 🔶 --> start  / 🔷--> end 
+<br>
+```
+🔶   1️⃣ 2️⃣ 3️⃣🔷
+```
+<br>
+#### 👉 direction이 row-reverse일때 
+<br>
+```
+🔷3️⃣ 2️⃣ 1️⃣   🔶
+```
+<br>
+#### 👉 direction이 column일때  
+<br>
+```
+🔶
+
+1️⃣
+2️⃣ 
+3️⃣     
+🔷
+```
+<br>
+#### 👉 direction이 column-reverse일때 
+<br>
+```
+🔷
+3️⃣
+2️⃣
+1️⃣
+
+🔶
+```
+<br>
+
+## `center`
+#### 아이템을 가운데 정렬 합니다.   
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶   1️⃣ 2️⃣ 3️⃣   🔷
+```
+<br>
+
+#### 👉 direction이 column일때  
+<br>
+```
+🔶
+
+1️⃣
+2️⃣ 
+3️⃣     
+
+🔷
+```
+<br>
+<br>
+## `space-between`
+#### 시작 아이템은 시작점에, 마지막 아이템은 끝점에 붙이고 나머지의 간격은 고르게 정렬합니다.    
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶1️⃣  2️⃣  3️⃣🔷
+```
+<br>
+
+#### 👉 direction이 column일때  
+<br>
+```
+🔶
+1️⃣
+
+2️⃣
+
+3️⃣     
+🔷
+```
+<br>
+<br>
+## `space-around`
+#### 아이템들의 여백을 균등하게 정렬합니다.    
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶 1️⃣  2️⃣  3️⃣ 🔷
+```
+<br>
+
+#### 👉 direction이 column일때  
+<br>
+```
+🔶
+
+1️⃣
+
+2️⃣
+
+3️⃣     
+
+🔷
+```
+<br>
+<br>
+<br>
+# 📐 align-content
+## 교차축의 정렬방법을 설정합니다! 
+#### 여기서 교차축(cross-axis)이란 정렬된 아이템들이 row일 때는 수직방향, column일때는 수평방향의 축을 말합니다. (주축과 반대방향) 
+<br>
+#### 🔶🔶🔶 --> start  / 🔷🔷🔷--> end 
+<br>
+<br>
+## `stretch (기본값)`
+#### 교차축을 채우기 위해 아이템을 늘립니다. 
+<br>
+<br> 
+## `flex-start`
+#### 아이템들을 각 줄의 시작점에 붙여 정렬합니다.  
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶🔶🔶    
+1️⃣ 2️⃣ 3️⃣
+
+
+🔷🔷🔷
+```
+<br>
+#### 👉 direction이 column일때  
+<br>
+```
+🔶1️⃣   🔷 
+🔶2️⃣   🔷
+🔶3️⃣   🔷
+```
+<br>
+<br>
+## `flex-end`
+#### 아이템들을 각 줄의 끝점에 붙여 정렬합니다.  
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶🔶🔶    
+
+
+1️⃣ 2️⃣ 3️⃣
+🔷🔷🔷
+```
+<br>
+#### 👉 direction이 column일때  
+<br>
+```
+🔶   1️⃣🔷 
+🔶   2️⃣🔷
+🔶   3️⃣🔷
+```
+<br>
+<br>
+## `center`
+#### 아이템들을 각 줄의 중앙에 정렬합니다.  
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶🔶🔶    
+
+1️⃣ 2️⃣ 3️⃣
+
+🔷🔷🔷
+```
+<br>
+#### 👉 direction이 column일때  
+<br>
+```
+🔶  1️⃣  🔷 
+🔶  2️⃣  🔷
+🔶  3️⃣  🔷
+```
+<br>
+<br>
+## `baseline`
+#### 아이템들의 문자 기준선에 정렬합니다.  
+<br>
+#### 👉 direction이 row일때 
+<br>
+```
+🔶-----1️⃣ 2️⃣ 3️⃣------
+🔷---------------------
+
+```
+<br>
+#### 👉 direction이 column일때  
+<br>
+```
+🔶 🔷
+ .  . 
+ .  .
+ .  .
+1️⃣   
+2️⃣  
+3️⃣  
+ .  
+ .
+ .
+```
+<br>
+<br>
+# 👉 다음편에는 flex-Item 속성에 대해서!</div></div><div class="detail_4 flex"><div class="prev"><a href="article-9.html"> &lt; 이전글 </a></div><div class="article_list"><a href="IT-1.html">목록으로돌아가기</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+<script>
+	var disqus_config = function(){
+		this.page.url = 'https://blog.ljeya.org/article-10.html';
+		this.page.identifier = 'article-10.html'; 
+	};
+	
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>
+	Please enable JavaScript to view the <a
+		href="https://disqus.com/?ref_noscript">comments powered by
+		Disqus. </a>
+</noscript><!-----------푸터 시작---------------------------------->
+<footer class="bottom con-min-width main">
+	<div class="con">
+		<div class="bottom-bar flex">
+			<div>
+				<span>ⓒ2020.Jeya All Rights Reserved</span>
+			</div>
+			<div class="img-box">
+				<img
+					src="img/footer_img.png"
+					alt="">
+			</div>
+			<div>
+				<span>Thank you for coming my Blog :)</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-----------푸터 끝---------------------------------->
+</div>
+</body>
+</html>
