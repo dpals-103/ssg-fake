@@ -55,7 +55,7 @@
 <!-- 메타태그정보 //-->
 <!-- META -->
 <link rel="canonical" href="https://blog.ljeya.org" />
-<meta name="subject" content="코린이 제야의 개발블로그" />
+<meta name="subject" content="💻JSP 커뮤니티 개발로그 -- 1" />
 <meta name="title" content="JEYA-BLOG" />
 <meta name="keywords" content="HTMl, CSS, JAVASCRIPT, JAVA, MySQL, Web Design" />
 <meta name="copyright" content="JEYA-BLOG" />
@@ -64,8 +64,30 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="JEYA-BLOG" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="코린이 제야의 개발블로그" />
-<meta property="og:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta property="og:title" content="💻JSP 커뮤니티 개발로그 -- 1" />
+<meta property="og:description" content=" JSP 커뮤니티 개발일지1
+youtube
+LpAeJf6Uvbs
+
+
+ 진행상황
+
+ X 메인화면 폼 만들기
+br
+ X 회원가입 폼 
+ X 회원가입 시 폼 체크빈칸X  필수입력 
+ X 회원가입 시 아이디 중복체크 
+ X 비밀번호 재확인 
+ X 가입정보 전송 
+ br
+ X 로그인 
+ X 로그인 후 로그아웃 기능 나타내기 회원가입 기능 숨기기 
+ X 로그아웃 후 회원가입로그인 나타내기 
+br
+ X 글쓰기 로그인 해야 가능하도록 
+ X 글삭제 해당 글 작성자만 가능하도록 
+ X 글수정 해당 글 작성자만 가능하도록 
+" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image" content="site/img/logo.png" />
 <meta property="og:image:alt" content="blog.ljeya.org" />
@@ -76,15 +98,59 @@
 <meta property="og:url" content="https://blog.ljeya.org" />
 <!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="코린이 제야의 개발블로그" />
+<meta name="twitter:title" content="💻JSP 커뮤니티 개발로그 -- 1" />
 <meta name="twitter:site" content="@JEYA-BLOG" />
 <meta name="twitter:creator" content="@JEYA-BLOG" />
 <meta name="twitter:image" content="site/img/logo.png">
-<meta name="twitter:description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta name="twitter:description" content=" JSP 커뮤니티 개발일지1
+youtube
+LpAeJf6Uvbs
+
+
+ 진행상황
+
+ X 메인화면 폼 만들기
+br
+ X 회원가입 폼 
+ X 회원가입 시 폼 체크빈칸X  필수입력 
+ X 회원가입 시 아이디 중복체크 
+ X 비밀번호 재확인 
+ X 가입정보 전송 
+ br
+ X 로그인 
+ X 로그인 후 로그아웃 기능 나타내기 회원가입 기능 숨기기 
+ X 로그아웃 후 회원가입로그인 나타내기 
+br
+ X 글쓰기 로그인 해야 가능하도록 
+ X 글삭제 해당 글 작성자만 가능하도록 
+ X 글수정 해당 글 작성자만 가능하도록 
+" />
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="JEYA-BLOG" />
 <meta itemprop="name" content="JEYA-BLOG" />
-<meta itemprop="description" content="초보 개발자의 개발공부 블로그입니다." />
+<meta itemprop="description" content=" JSP 커뮤니티 개발일지1
+youtube
+LpAeJf6Uvbs
+
+
+ 진행상황
+
+ X 메인화면 폼 만들기
+br
+ X 회원가입 폼 
+ X 회원가입 시 폼 체크빈칸X  필수입력 
+ X 회원가입 시 아이디 중복체크 
+ X 비밀번호 재확인 
+ X 가입정보 전송 
+ br
+ X 로그인 
+ X 로그인 후 로그아웃 기능 나타내기 회원가입 기능 숨기기 
+ X 로그아웃 후 회원가입로그인 나타내기 
+br
+ X 글쓰기 로그인 해야 가능하도록 
+ X 글삭제 해당 글 작성자만 가능하도록 
+ X 글수정 해당 글 작성자만 가능하도록 
+" />
 <meta itemprop="image" content="site/img/logo.png" />
 
 <!-- 구글 소유권 확인 메타태그 -->
@@ -94,7 +160,7 @@
 <!--css -->
 <link rel="stylesheet" href="app.css" />
 
-<title>JEYA-BLOG | 🔎Search Post</title>
+<title>💻JSP 커뮤니티 개발로그 -- 1</title>
 </head>
 
 <body>
@@ -137,57 +203,70 @@
 
 				</div>
 		</header>
-		<!-----------헤더 끝----------------------------------><!----------섹션 시작---------------------------------->
+		<!-----------헤더 끝----------------------------------><!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
 
-<!--loadash 불러오기-->
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+	
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
-<!--vue 불러오기-->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-<section id="list-vue" class="con-min-width main">
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+	
+<section class="con-min-width">
 	<div class="con">
-		<div class="section-2__list flex .main">
+		<div class="section-3_detail flex"><div class="detail_1 flex"><span>💻JSP 커뮤니티 개발로그 -- 1</span></div><div class="detail_2 flex">작성일 : <div class="regDate">2021-01-21 01:19:36</div>작성자 : <div class="writer">제야</div>조회수 <div class="count">0</div>추천수 <div class="count">0</div>댓글수 <div class="count">0</div></div><div class="detail_3"><div class="detail_body"># JSP 커뮤니티 개발일지1💻
+```youtube
+LpAeJf6Uvbs
+```
 
-			<div class="title">🔎Search Post</div>
+# 진행상황
 
-			<div class="search flex">
-				<form action="">
-					<input @input="searchKeyWordInputed" v-model="searchKeyWord"
-						type="text" :value="searchKeyWord" placeholder="검색어를 입력하세요">
-				</form>
-			</div>
-
-			<header>
-				<div class="list flex">
-					<div class="list__title">제목</div>
-					<div class="list__writer">작성자</div>
-					<div class="list__count">조회수</div>
-					<div class="list__likes">추천수</div>
-					<div class="list__regDate">날짜</div>
-				</div>
-			</header>
-
-			<main>
-				<div v-for="article in filtered" class="list flex">
-					<div class="list__title"><a :href="'article-' + article.id + '.html'" target="_blank">
-					{{article.title}}</a></div>
-					<div class="list__writer">{{article.writer}}</div>
-					<div class="list__count">{{article.count}}</div>
-					<div class="list__likes">{{article.likes}}</div>
-					<div class="list__regDate">{{article.regDate}}</div>
-				</div>
-			</main>
-
-
-		</div>
-	</div>
-	<script src="listVue.js"></script>
-</section>
-
-
-<!-----------섹션 끝----------------------------------> <!-----------푸터 시작---------------------------------->
+- [X] 메인화면 폼 만들기
+<br>
+- [X] 회원가입 폼 
+- [X] 회원가입 시 폼 체크(빈칸X / 필수입력) 
+- [X] 회원가입 시 아이디 중복체크 
+- [X] 비밀번호 재확인 
+- [X] 가입정보 전송 
+ <br>
+- [X] 로그인 
+- [X] 로그인 후 [로그아웃] 기능 나타내기 (회원가입 기능 숨기기) 
+- [X] 로그아웃 후 [회원가입/로그인] 나타내기 
+<br>
+- [X] 글쓰기 [로그인 해야 가능하도록] 
+- [X] 글삭제 [해당 글 작성자만 가능하도록] 
+- [X] 글수정 [해당 글 작성자만 가능하도록] 
+</div></div><div class="detail_4 flex"><div class="prev"><a href="article-11.html"> &lt; 이전글 </a></div><div class="article_list"><a href="StudyLog-1.html">목록으로돌아가기</a></div><div class="next"><a href="article-13.html">다음글 &gt;</a></div></div></div></div><script src="app.js"></script></section><div id="disqus_thread"></div>
+<script>
+	var disqus_config = function(){
+		this.page.url = 'https://blog.ljeya.org/article-12.html';
+		this.page.identifier = 'article-12.html'; 
+	};
+	
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = 'https://jeya-portfolio.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>
+	Please enable JavaScript to view the <a
+		href="https://disqus.com/?ref_noscript">comments powered by
+		Disqus. </a>
+</noscript><!-----------푸터 시작---------------------------------->
 <footer class="bottom con-min-width main">
 	<div class="con">
 		<div class="bottom-bar flex">
